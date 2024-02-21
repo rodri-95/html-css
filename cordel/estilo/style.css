@@ -30,7 +30,7 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 4em;
+    font-size: 4vh;
 }
 
 header > p {
@@ -53,17 +53,17 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 1.4em;
 }
 
 section > p {
     padding-bottom: 2em;
+    font-size: 3vh;
+    font-family: var(--fonte3);
 }
 
 section.normal {    
     background-color: white;
     color: black;
-    font-family: var(--fonte3);
 }
 
 section.imagem {
