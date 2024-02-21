@@ -2,13 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap')
-
-.indie-flower-regular {
-    font-family: "Indie Flower", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --fonte1:  Verdana, Geneva, Tahoma, sans-serif;
@@ -19,7 +13,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Raleway", sans-serif;
 }
 
 html, body {
@@ -34,8 +27,10 @@ header {
 }
 
 header > h1 {
-    padding-top: 50px;    
+    padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 4em;
 }
 
 header > p {
@@ -57,11 +52,15 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 1.4em;
 }
 
 section.normal {
+    
     background-color: white;
     color: black;
+    font-family: var(--fonte3);
 }
 
 section.imagem {
@@ -70,9 +69,10 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.507);
     padding: 10px;
-    width: 200px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.548);
 }
