@@ -4,6 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de Notas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        th, td {
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        tr.media {
+            text-align: left;
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
     <table>
@@ -20,7 +47,7 @@
             </tr>
         </thead>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" class="materia">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -37,9 +64,34 @@
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
+            </tr>  
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>  
+            <tr  class="media">
+                <th colspan="4">Média de Exatas</th>
+                <td class="num">0.0</td>
             </tr>
-
-        
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="media">
+                <th colspan="4">Média de Humanas</th>
+                <td class="num">0.0</td>
+            </tr>
     </table>
 </body>
 </html>
