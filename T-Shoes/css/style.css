@@ -1,49 +1,51 @@
 :root {
     --brand_color: #7CA2F4;
     --dark: #121214;
-    --white_soft: #f3f7ff;
+    --white_soft: #F3F7FF;
     --white: #FFFFFF;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     width: 100%;
     height: 100%;
-    font-family: archivo, sans-serif;
+    font-family: Archivo, sans-serif;
 }
 
 .top_fixed {
     width: 100%;
     height: 64px;
     background-color: var(--white_soft);
-    font-size: 20px;
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 24px; /* ajuste */
 }
 
 .hero {
     width: 100%;
-    height: 600px;
+    height: 400px;
     background-image: url('../images/image-michael-jordan.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hero__content {
-    width: 70%;
+    width: 80%;
     height: auto;
     color: var(--white);
+
 }
 
 .hero__content h1, .hero__content p {
@@ -63,13 +65,15 @@ body {
 main {
     width: 100%;
     height: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
-.produtos {    
-    width: 70%;
+.produtos {
+    width: 100%;
     height: 100%;
     margin-block: 80px;
 
@@ -83,63 +87,66 @@ main {
 .heading__produtos {
     width: 590px;
     height: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 72px;
 }
 
-.heading__produtos > h3 {
+.heading__produtos h3 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
 }
 
-.heading__produtos > p {
-    font-size: 20px;    
+.heading__produtos p {
+    font-size: 24px;
 }
 
 .lista__produtos {
     width: 100%;
     height: 100%;
+
     display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+
 }
 
 .card__produto {
-    width: 384px;
+    width: 336px;
     height: 326px;
+    flex-basis: 336px;
 }
 
-.card__produto > figure {
+.card__produto figure {
     width: 100%;
     height: 200px;
     background-color: var(--white_soft);
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card__produto > .detalhes {
+.card__produto_detalhes {
     margin-block: 24px;
 
 }
 
-.card__produto > .detalhes > h4 {
+.card__produto_detalhes h4 {
     font-size: 18px;
     line-height: 28px;
 }
 
-.card__produto > .detalhes > h5 {
+.card__produto_detalhes h5 {
     font-size: 16px;
     line-height: 26px;
     color: var(--brand_color);
-    
 }
 
-/* preço */
-.card__produto >  p {
-    font-size: 18px;
-    line-height: 28px;
+/* preco */
+.card__produto h6 {
+    font-size: 20px; /* estava 18  */
+    line-height: 30px; /* estava 28 */
     font-family: "Space Grotesk", sans-serif;
 }
